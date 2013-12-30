@@ -34,7 +34,7 @@ static char TAG_ACTIVITY_INDICATOR;
     if ([self activityIndicator] == nil) {
         self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:activityStyle];
         
-        self.activityIndicator.autoresizingMask = UIViewAutoresizingNone;
+        self.activityIndicator.autoresizingMask =  UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
         
         //calculate the correct position
         float width = self.activityIndicator.frame.size.width;
